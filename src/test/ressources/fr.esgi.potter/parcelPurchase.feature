@@ -1,35 +1,35 @@
 Feature: Amount of a parcel
 
-  Scenario: Validate the value of empty parcel
-    Given Parcel empty
-    Then parcel amount should be equals to 0 €
+  Scenario: Validate the value of an empty parcel
+    Given an empty parcel
+    Then the parcel amount should be equals to 0 €
 
   Scenario: Validate the value of a parcel containing one book
-    Given Parcel containing one book
+    Given a parcel containing one book
     When parcel discount is calculated
-    Then parcel amount should be equals to 8 €
+    Then the parcel amount should be equals to 8 €
 
   Scenario: Validate the value of a parcel containing two same books
-    Given Parcel containing two books
+    Given a parcel containing two books
     When parcel discount is calculated
-    Then parcel amount should be equals to 16 €
+    Then the parcel amount should be equals to 16 €
 
   Scenario: Validate the value of a parcel containing three same books
-    Given Parcel containing three books
+    Given a parcel containing three books
     When parcel discount is calculated
-    Then parcel amount should be equals to 24 €
+    Then the parcel amount should be equals to 24 €
 
   Scenario: Validate the value of a parcel containing four same books
-    Given Parcel containing four books
+    Given a parcel containing four books
     When parcel discount is calculated
-    Then parcel amount should be equals to 32 €
+    Then the parcel amount should be equals to 32 €
 
   Scenario: Validate the value of a parcel containing fifth same books
-    Given Parcel containing fifth books
+    Given a parcel containing fifth books
     When parcel discount is calculated
-    Then parcel amount should be equals to 40 €
+    Then the parcel amount should be equals to 40 €
 
   Scenario: Validate the value of a parcel containing fifth same books
-    Given Parcel containing fifth books
+    Given a parcel containing fifth books
     When parcel discount is calculated
-    Then parcel amount should be equals to 40 €
+    Then the parcel amount should be equals to 40 €

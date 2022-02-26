@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 
-public class ParcelSteps {
+public class ParcelPurchase {
 
     private Parcel parcel = new Parcel();
     private ArrayList<Book> books = new ArrayList<>();
